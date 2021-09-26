@@ -1,0 +1,8 @@
+	Horaire des bus LUBUMBASHI
+	* BUS1: LUBUMBASHI vers KOLWEZI départ: 7h  Arrivé: 11h
+	* BUS1: KOLWEZI vers LUBUMBASHI départ: 12h Arrivé: 16h 
+	* BUS1: LUBUMBASHI vers KOlwezi départ: 17h Arrivé: 21h
+		"Tout en faisant des éscales à LIKASI et FUNGURUME"
+	*BUS2: LUBUMBASHI vers KASUMBALESA départ: 7h  Arrivé: 9h
+	*BUS2: KASUMBALESA vers LUBUMBASHI départ: 12h Arrivé: 14h
+	*BUS2: LUBUMBASHI vers KASUMBALESA départ: 17h Arrivé: 19h

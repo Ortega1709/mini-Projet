@@ -1,0 +1,7 @@
+	Horaire des Bus KASUMBALESA
+	*BUS1: KASUMBALESA vers KOLWEZI départ: 7h Arrivé: 12h 
+	*BUS1: KOLWEZI vers KASUMBALESA départ: 13h Arrivé: 18h
+		 En faisant éscale à LUBUMBASHI et LIKASI
+	*BUS2: KASUMBALESA vers FUNGURUME départ: 7h Arrivé: 11h
+	*BUS2: FUNGURUME vers KASUMBALESA départ: 12h Arrivé: 16h
+		En faisant éscale à LIKASI et KOLWEZI

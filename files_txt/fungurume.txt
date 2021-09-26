@@ -1,0 +1,11 @@
+	Horaire des Bus FUNGURUME
+	*BUS1: FUNGURUME vers KOLWEZI départ: 7h Arrivé: 8h30
+	*BUS1: KOLWEZI vers LUBUMBASHI départ: 9h Arrivé: 13h
+	*BUS1: LUBUMBASHI vers FUNGURUME départ: 14h Arrivé: 18h
+	*BUS1: FUNGURUME vers LIKASI départ: 18h30 Arrivé: 20h
+	
+	
+	*BUS2: FUNGURUME vers KASUMBALESA départ: 7h Arrivé: 10h
+	*BUS2: KASUMBALESA vers FUNGURUME départ: 11h Arrivé: 14h
+	*BUS2: FUNGURUME vers KASUMBALESA départ: 15h Arrivé: 18h
+		En faisant éscale à LUBUMBASHI

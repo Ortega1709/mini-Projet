@@ -1,0 +1,11 @@
+	Horaire des Bus LIKASI
+	*BUS1: LIKASI vers KOLWEZI départ: 7h  Arrivé: 9h 
+	*BUS1: KOLWEZI vers LIKASI départ: 10h Arrivé: 12h
+	*BUS1: LIKASI vers KOLWEZI départ: 13h Arrivé: 15h
+	*BUS1: KOLWEZI vers LIKASI départ: 16h Arrivé: 18h
+		Tout en faisant éscale à  Fungurume
+	*BUS2: LIKASI vers KASUMBALESA départ: 7h  Arrivé: 10h
+	*BUS2: KASUMBALESA vers LIKASI départ: 11h Arrivé: 14h
+	*BUS2: LIKASI vers KASUMBALESA départ: 13h Arrivé: 16h
+	*BUS2: KASUMBALESA vers LIKASI départ: 17h Arrivé: 20h
+		Tout en faisant des éscales à LUBUMBASHI		

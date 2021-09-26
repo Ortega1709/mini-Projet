@@ -1,0 +1,10 @@
+	Horaire des Bus Kolwezi
+	*BUS1: Kolwezi vers LUBUMBASHI départ: 7h  Arrivé: 11h
+	*BUS1: LUBUMBASHI vers KOLWEZI départ: 12h Arrivé: 16h
+	*BUS1: KOLWEZI vers LUBUMBASHI départ: 17h Arrivé: 21h
+		"Tout en faisant des éscales à LIKASI et FUNGURUME"
+	*BUS2: KOLWEZI vers KASUMBALESA départ: 7h Arrivé: 12h 
+	*BUS2: KASUMBALESA vers KOLWEZI départ: 13h Arrivé: 18h
+		"Tout en faisant éscale à LUBUMBASHI"
+	
+	
