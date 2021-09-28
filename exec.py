@@ -1,14 +1,21 @@
+#! /bin/python3
 #***********************************************#
 #       FONCTION PRINCIPALE GESTION D'AUTOCARS  #
 #***********************************************#
 
 from os import system
-from time import sleep
+from time import sleep, time
 from horaires import Horaires
 from places import Places
 from choix import Choix
 from reservation import Reservation
+from datetime import datetime
 import sys
+
+
+L = ['A1','A2','A3','A4']
+
+
 
 #*****************************start*********************************#
 def start():
@@ -37,6 +44,8 @@ def start():
     sleep(2)
     
 
+
+
 #*****************************Acceuil*******************************#
 def acceuil():
     system("clear")
@@ -58,6 +67,7 @@ def acceuil():
     except:
         print("         Veuillez entrer un entier")
 
+
 #****************************Réservations***************************#
 def reservation():
     system("clear")
@@ -77,6 +87,10 @@ def reservation():
         return CHOIX
     except:
         print("         Veuillez entrer un entier")
+ 
+
+
+
 
 #***************************Informations****************************#
 def informations():
@@ -99,6 +113,8 @@ def informations():
         print("         Veuillez entrer un entier")
         
 
+
+
 #***********************Formulaire singleton************************#
 def formulaire_singleton():
     system("clear")
@@ -107,9 +123,20 @@ def formulaire_singleton():
     print("""   |  ___|__  _ __ _ __ ___  _   _| | __ _(_)_ __ ___                         """)
     print("""   | |_ / _ \| '__| '_ ` _ \| | | | |/ _` | | '__/ _ \                        """)
     print("""   |  _| (_) | |  | | | | | | |_| | | (_| | | | |  __/                        """)
-    print("""   |_|  \___/|_|  |_| |_| |_|\__,_|_|\__,_|_|_|  \___|              singleton """)
+    print("""   |_|  \___/|_|  |_| |_| |_|\__,_|_|\__,_|_|_|  \___|  singleton             """)
     print("                                                                                  ")
-    nom = str(input("Nom:"))
+    nom = str(input("         Nom:"))
+    ville_o = str(input("         Ville de départ:"))
+    ville_a = str(input("         Ville d'arrivée:"))
+    date_reservation = datetime.now()
+    pl = Places(L,1)
+    place = pl.attribut_places_singletons()
+    res = Reservation()
+    res.formulaire_singleton(nom,ville_o,ville_a,date_reservation,place)
+
+
+
+
 
 #***********************Formulaire couple**************************#
 def formulaire_couple():
@@ -119,9 +146,23 @@ def formulaire_couple():
     print("""   |  ___|__  _ __ _ __ ___  _   _| | __ _(_)_ __ ___                         """)
     print("""   | |_ / _ \| '__| '_ ` _ \| | | | |/ _` | | '__/ _ \                        """)
     print("""   |  _| (_) | |  | | | | | | |_| | | (_| | | | |  __/                        """)
-    print("""   |_|  \___/|_|  |_| |_| |_|\__,_|_|\__,_|_|_|  \___|              couple    """)
+    print("""   |_|  \___/|_|  |_| |_| |_|\__,_|_|\__,_|_|_|  \___|  couple                """)
     print("                                                                                  ")
-    nom = str(input("Nom:"))
+    nom = str(input("         Nom:"))
+    ville_o = str(input("         Ville de départ:"))
+    ville_a = str(input("         Ville d'arrivée:"))
+    pl = Places(L,1)
+    place = pl.attribut_places_couples()
+    nom1 = str(input("         Nom:"))
+    ville_o1 = str(input("         Ville de départ:"))
+    ville_a1 = str(input("         Ville d'arrivée:"))
+    date_reservation = datetime.now()
+    res = Reservation()
+    res.formulaire_couple(nom,ville_o,ville_a,date_reservation,nom1,ville_o1,ville_a1,date_reservation,place)
+
+
+
+
 
 #********************Voir réservations******************************#
 def voir_reservations():
@@ -138,8 +179,12 @@ def voir_reservations():
         print("         Veuillez entrer un entier")
 
 
-#********************Exec*******************************************#
-def executable():
+
+
+
+
+#******************************Exec*****************************#
+def lunch():
 
     start()
     vouloir = str(input("      Commencer(O/N) ? "))
@@ -151,27 +196,26 @@ def executable():
     while vouloir != "N":
         vouloir1 = acceuil()
         cc = Choix(vouloir1,1)
+
         if vouloir1 == 1:
-            vouloir1 = reservation()
-            cc = Choix(vouloir1,2)
+            vouloir2 = reservation()
+            cc = Choix(vouloir2,2)
+            if vouloir2 == 1:
+                formulaire_singleton()
+            if vouloir2 == 2:
+                formulaire_couple()
+                
         if vouloir1 == 2:
             vouloir1 = informations()
             cc = Choix(vouloir1,3)
+            
         if vouloir1 == 3:
             vouloir1 = voir_reservations()
             cc = Choix(vouloir1,5)
+
         if vouloir1 == 4:
             vouloir = "N"
     
-    print(vouloir)
-    
-    # pas encore finis #
-    
-
-
-    
-
-
 
 
 

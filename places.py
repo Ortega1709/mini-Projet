@@ -17,7 +17,7 @@ class Places:
         return False
 
     def verification_places_couples(self) -> bool:
-        if len(self.L) > 2:
+        if len(self.L) >= 2:
             return True
         return False
 
@@ -25,7 +25,7 @@ class Places:
         self.l = p[0]
         self.l1 = p1[0]
         self.n = int(p[1])
-        self.n1 = int(p[1])
+        self.n1 = int(p1[1])
          
         if self.l == self.l1:
             if self.n + 1 == self.n1 and self.n + 1 != 3:
@@ -43,10 +43,7 @@ class Places:
             return f"{self.p}"
     
     def attribut_places_couples(self) -> bool:
-        if self.verification_places_couples() == False:
-            print("Plus de place pour couple dans le bus",self.bus)
-            return 
-        else:
+        if self.verification_places_couples() == True:
             for i in range(len(self.L) - 1):
                 if self.compatible_places_couples(self.L[i],self.L[i+1]):
                     self.p = self.L[i]
@@ -54,8 +51,10 @@ class Places:
                     self.L.remove(self.p)
                     self.L.remove(self.p1)
                     return f"{self.p},{self.p1}"
-            print("Pas de place pour couple dans le bus",self.bus)
-            return 
+                else:
+                    return f"Plus de place pour couple"
+        else:
+            return f"Plus de place pour couple"
     
 
 
